@@ -5,14 +5,19 @@
     /*FIXED DIMENSIONS*/
     --footer-height: 100px;
     --nav-width: 300px;
+    --header-height: 100px;
 
     /*COLORS*/
     --footer-bg-color: #282828;
     --main-bg-color: #141922;
     --nav-bg-color: black;
+    --header-bg-color: rgba(255, 255, 255, 0.1);
+
     --active-text: white;
     --inactive-text: #6e6e6e;
+
     --green-bar: #adff2f;
+
     
 }
 
@@ -21,6 +26,7 @@ html {
 
     /*DEBUG*/
     font-size: 3rem;
+    
 
 }
 
@@ -51,16 +57,13 @@ main {
 }
 
 /* NAV */
-nav {
+nav.sidebar {
 
     width: var(--nav-width);
     top: 0;
     left: 0;
     height: calc(100% - var(--footer-height));
-    background-color: var(--nav-bg-color);
-    /*DEBUG*/
-
-    
+    background-color: var(--nav-bg-color);    
 
 }
 
@@ -68,13 +71,19 @@ nav {
 section {
 
     width: 100%;
+   
 
 }
 
 /* HEADER */
 header {
 
-
+    width: calc(100% - var(--nav-width));
+    height: var(--header-height);
+    background-color: var(--header-bg-color);
+    
+    right:0;
+    top: 0;
 
 }
 
@@ -85,9 +94,6 @@ footer {
     height: var(--footer-height);
     width: 100%;
     background-color: var(--footer-bg-color);
-    
-    
-
 
 }
 
