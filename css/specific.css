@@ -45,6 +45,12 @@ h1,h2,h3,h4 {
 
 }
 
+img {
+
+    width: 100%;
+
+}
+
 /*------------------------------------------------------DESKTOP FIRST-------------------------*/
 
 /* VIEWPORT */
@@ -163,9 +169,6 @@ header {
     right:0;
     top: 0;
 
-    text-align: end;
-    vertical-align: center;
-
 }
 
 header a {
@@ -177,8 +180,7 @@ header a {
     border: 1px solid var(--active-text);
     padding: var(--base-padding);
     margin-right: calc(var(--base-padding) * 3);
-    border-radius: 50%;
-
+    border-radius: 50px;
 
 }
 
