@@ -163,6 +163,23 @@ header {
     right:0;
     top: 0;
 
+    text-align: end;
+    vertical-align: center;
+
+}
+
+header a {
+    
+    display: block;
+    text-decoration: none;
+    color: var(--active-text);
+    font-weight: 600;
+    border: 1px solid var(--active-text);
+    padding: var(--base-padding);
+    margin-right: calc(var(--base-padding) * 3);
+    border-radius: 50%;
+
+
 }
 
 /* FOOTER */
