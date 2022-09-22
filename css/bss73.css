@@ -91,6 +91,14 @@ html {
 
 }
 
+.flex-cntr-cntr {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .flex-spc-btwn-strt
 {
 
