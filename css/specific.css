@@ -21,6 +21,7 @@
 
     /*GREEN BAR*/
     --green-bar: #adff2f;
+    --green-bar-left: 3px solid #adff2f;
     --border-active-dimensions: 3px;
 
     /*PADDINGS*/
@@ -78,97 +79,72 @@ nav.sidebar {
     left: 0;
     height: calc(100% - var(--footer-height));
     background-color: var(--nav-bg-color);    
+
+}
+
+nav.sidebar .element {
+
+    padding-left: var(--base-padding);
+    padding-right: var(--base-padding);
+    padding-top: calc(var(--base-padding) / 5);
+    padding-bottom: calc(var(--base-padding) / 5);
     font-weight: 600;
+
+}
+
+nav.sidebar .active {
+
+    color: var(--active-text);
+
+}
+
+nav.sidebar .inactive {
+
+
     color: var(--inactive-text);
 
 }
 
-nav .logo {
-    
-    padding: var(--base-padding);
+nav.sidebar .bordered {
+
+    border-left: var(--green-bar-left);
 
 }
-nav.sidebar .logo img {
 
-    margin-right: var(--base-padding);
+nav.sidebar .visible-xs {
+
+    display: none;
+
+}
+
+nav.sidebar .img-grow-large {
+
     width: 20%;
 
 }
 
-nav.sidebar .menu li {
-
-    fill: var(--inactive-text);
-    
-    padding-left: var(--base-padding);
-    padding-right: 0;
-    padding-top: calc(var(--base-padding) / 10);
-    padding-bottom: calc(var(--base-padding) / 10);
-    
-}
-
-nav.sidebar .menu li img {
+nav.sidebar .img-grow-medium {
 
     width: 15%;
 
 }
 
-nav.sidebar .menu li.active {
-
-    color: var(--active-text);
-    border-left: var(--border-active-dimensions) solid var(--green-bar);
-
-}
-
-nav.sidebar .playlist {
-
-    padding: var(--base-padding);
-
-}
-
-nav.sidebar .playlist img {
-
-    width: 20%;
-    margin-right: var(--base-padding);
-
-}
-
-nav.sidebar .playlist li {
-
-    padding: calc(var(--base-padding) / 5) 0;
-
-}
-
-nav.sidebar .bottom-sidebar {
-
-    padding: var(--base-padding);
-
-}
-
-nav.sidebar .bottom-sidebar .installa-app {
-
-    margin-bottom: var(--base-padding);
-
-}
-
-nav.sidebar .bottom-sidebar .profilo {
-
-    margin-top: var(--base-padding);
-
-}
-
-nav.sidebar .bottom-sidebar .installa-app img {
+nav.sidebar .img-grow-small {
 
     width: 10%;
-    margin-right: var(--base-padding);
 
 }
 
-nav.sidebar .bottom-sidebar .profilo img {
+nav.sidebar span {
 
-    width: 15%;
-    margin-right: var(--base-padding);
+    margin-left: calc(var(--base-padding) / 3);
+
+}
+
+nav.sidebar .circled {
+
     background-color: var(--inactive-text);
-    border-radius: 50%;
+    border-radius: 30px;
 
 }
 
@@ -290,6 +266,28 @@ footer {
 
 }
 
+footer .side-footer {
+
+    width: var(--nav-width);
+    height: var(--footer-height);
+
+    /*DEBUG*/
+    background-color: yellow;
+
+}
+
+footer .center-footer {
+
+    width: 50%;
+    height: var(--footer-height);
+
+    /*DEBUG*/
+    background-color: orangered;
+
+}
+
+
+
 /*------------------------------------------------------SMALL DESKTOP (max-width 1100px)------*/
 @media screen and (max-width: 1100px) {
     
@@ -314,6 +312,8 @@ footer {
 
 
     }
+
+
 
     /* SECTION */
     section {
@@ -430,28 +430,46 @@ footer {
 
     nav.sidebar {
 
-        padding: 0;
+       
 
     }
 
-    /* SIDEBAR */
-    nav.sidebar h1,
-    nav.sidebar h2,
-    nav.sidebar span,
-    nav.sidebar .playlist, 
-    nav.sidebar hr {
+    nav.sidebar .invisible-xs {
 
         display: none;
+    
+    }
+
+    nav.sidebar .visible-xs {
+
+        display: inline;
 
     }
 
-    nav.sidebar img {
+    nav.sidebar .element {
 
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-
+        
+        padding: calc(var(--base-padding) / 10);
+        padding-bottom: var(--base-padding); 
+        
+    
     }
+
+    nav.sidebar .img-grow-large, 
+    nav.sidebar .img-grow-medium,
+    nav.sidebar .img-grow-small {
+    
+        width: 100%;
+    
+    }
+
+    nav.sidebar .bordered {
+
+        border: 0;
+    
+    }
+
+
 
     /* SECTION */
     section {

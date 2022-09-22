@@ -27,50 +27,29 @@
     <nav class="sidebar position-fixed flex-column-spc-btwn">
       <div class="top-sidebar">
 
-        <div class="logo flex-start-center">
-          <img src="img/logo-small.svg" alt="">
-          <h1>Spotify&reg;</h1>
-        </div>
-
-        <div class="menu">
+        <div class="logo element active"><img class="invisible-xs" src="img/logo.svg" alt="Logo"><img class="visible-xs img-grow-large" src="img/logo-small.svg" alt=""></div>
+        <div class="home element active bordered display-flex align-items-center"><img class="img-grow-medium" src="img/home.svg" alt="Home"><span class="invisible-xs">Home</span></div>
+        <div class="search element inactive display-flex align-items-center"><img class="img-grow-medium" src="img/search.svg" alt="Search"><span class="invisible-xs">Cerca</span></div>
+        <div class="library element inactive display-flex align-items-center"><img class="img-grow-medium" src="img/libreria.svg" alt="Search"><span class="invisible-xs">La tua libreria</span></div>
+        <div class="playlist invisible-xs">
+          <h1 class="element active">PLAYLIST</h1>
+          <div class="create-playlist element inactive display-flex align-items-center"><img class="img-grow-large" src="img/square-plus-solid.svg" alt="Search"><span>Crea Playlist</span></div>
           <ul>
-            <li class="active flex-start-center"><img src="img/home.svg" alt=""><span> Home</span></li>
-            <li class="flex-start-center"><img src="img/search.svg" alt=""><span> Cerca</span></li>
-            <li class="flex-start-center"><img src="img/libreria.svg" alt=""><span> La tua libreria</span></li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
+            <li class="element inactive new-playlist">Nome Playlist</li>
           </ul>
-        </div>
-
-        <div class="playlist">
-
-          <h2>PLAYLIST</h2>
-          
-          <div class="create-playlist">
-            
-            <div class="flex-start-center"><img src="img/square-plus-solid.svg" alt=""><span> Crea Playlist</span></div>
-
-          </div>
-
-          <ul>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-          </ul>
-
         </div>
       </div> 
 
       <div class="bottom-sidebar">
-        <div class="installa-app display-flex align-items-center">
-          <img src="img/download.svg" alt=""><span>Installa app</span>
-        </div>
-        <hr>
-        <div class="profilo display-flex align-items-center">
-          <img src="img/profile.svg" alt=""><span>John Doe</span>
-        </div>
+        <div class="install element inactive display-flex align-items-center"><img class="img-grow-small" src="img/download.svg" alt="download"><span class="invisible-xs">Installa app</span></div>
+        <hr class="element inactive invisible-xs">
+        <div class="profile element active display-flex align-items-center"><img class="img-grow-medium circled" src="img/profile.svg" alt="Profilo"><span class="invisible-xs">John Doe</span></div>
       </div>
 
     </nav >
@@ -185,8 +164,10 @@
     <!-- /MAIN -->
 
     <!-- FOOTER -->
-    <footer class="position-fixed">
-
+    <footer class="position-fixed flex-spc-btwn-cntr">
+      <div class="side-footer"></div>
+      <div class="center-footer"></div>
+      <div class="side-footer"></div>
     </footer>
     <!-- /FOOTER -->
 
