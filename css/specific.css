@@ -61,6 +61,19 @@ ul {
 
 }   
 
+.active {
+
+    color: var(--active-text);
+
+}
+
+.inactive {
+
+
+    color: var(--inactive-text);
+
+}
+
 /*------------------------------------------------------DESKTOP FIRST-------------------------*/
 
 /* VIEWPORT */
@@ -92,18 +105,7 @@ nav.sidebar .element {
 
 }
 
-nav.sidebar .active {
 
-    color: var(--active-text);
-
-}
-
-nav.sidebar .inactive {
-
-
-    color: var(--inactive-text);
-
-}
 
 nav.sidebar .bordered {
 
@@ -266,13 +268,19 @@ footer {
 
 }
 
+footer .element {
+
+    padding: calc(var(--base-padding) / 2);
+    font-weight: 600;
+
+}
+
 footer .side-footer {
 
     width: var(--nav-width);
     height: var(--footer-height);
 
-    /*DEBUG*/
-    background-color: yellow;
+   
 
 }
 
@@ -283,6 +291,12 @@ footer .center-footer {
 
     /*DEBUG*/
     background-color: orangered;
+
+}
+
+footer .side-footer img {
+
+    width: 20%; 
 
 }
 
@@ -491,6 +505,14 @@ footer .center-footer {
         
 
     }
+
+    footer .side-footer {
+
+        width: 25%;
+    
+    }
+
+    
 
 }
 
