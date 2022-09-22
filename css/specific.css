@@ -428,6 +428,31 @@ footer {
 
     }
 
+    nav.sidebar {
+
+        padding: 0;
+
+    }
+
+    /* SIDEBAR */
+    nav.sidebar h1,
+    nav.sidebar h2,
+    nav.sidebar span,
+    nav.sidebar .playlist, 
+    nav.sidebar hr {
+
+        display: none;
+
+    }
+
+    nav.sidebar img {
+
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
     /* SECTION */
     section {
 
