@@ -311,6 +311,12 @@ main i.position-absolute {
 
 }
 
+.card-image.position-relative:hover {
+
+    opacity: 0.5;
+
+}
+
 
 /* HEADER */
 header {
@@ -365,8 +371,6 @@ footer .side-footer {
     width: var(--nav-width);
     height: var(--footer-height);
 
-   
-
 }
 
 footer .center-footer {
@@ -392,61 +396,13 @@ footer .bar-inactive {
 
 }
 
-
-
-
-
 /*------------------------------------------------------SMALL DESKTOP (max-width 1100px)------*/
 @media screen and (max-width: 1100px) {
-    
-
-    /* VIEWPORT */
-    #viewport {
-
-
-
-    } 
-
-    /* MAIN */
-    main {
-
-
-
-    }
-
-    /* NAV */
-    nav {
-
-
-
-    }
-
-
 
     /* SECTION */
-    section {
-
-        
-
-    }
-
     section .card {
 
         width: calc(100% / 4);
-
-    }
-
-    /* HEADER */
-    header {
-
-
-
-    }
-
-    /* FOOTER */
-    footer {
-
-        
 
     }
 
@@ -454,53 +410,11 @@ footer .bar-inactive {
 
 /*------------------------------------------------------TABLET (max-width 700px)------*/
 @media screen and (max-width: 700px) {
-    
-
-    /* VIEWPORT */
-    #viewport {
-
-
-
-    } 
-
-    /* MAIN */
-    main {
-
-
-
-    }
-
-    /* NAV */
-    nav {
-
-
-
-    }
 
     /* SECTION */
-    section {
-
-        
-
-    }
-
     section .card {
 
         width: calc(100% / 2);
-
-    }
-
-    /* HEADER */
-    header {
-
-
-
-    }
-
-    /* FOOTER */
-    footer {
-
-        
 
     }
 
@@ -515,33 +429,7 @@ footer .bar-inactive {
         
     }
 
-    /* VIEWPORT */
-    #viewport {
-
-
-
-    } 
-
-    /* MAIN */
-    main {
-
-
-
-    }
-
     /* NAV */
-    nav {
-
-
-
-    }
-
-    nav.sidebar {
-
-       
-
-    }
-
     nav.sidebar .invisible-xs {
 
         display: none;
@@ -577,36 +465,12 @@ footer .bar-inactive {
     
     }
 
-
-
-    /* SECTION */
-    section {
-
-
-
-    }
-
-    /* HEADER */
-    header {
-
-
-
-    }
-
     /* FOOTER */
-    footer {
-
-        
-
-    }
-
     footer .side-footer {
 
         width: 25%;
     
     }
-
-    
 
 }
 
