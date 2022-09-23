@@ -17,7 +17,7 @@
     --active-text: white;
     --inactive-text: #6e6e6e;
 
-    --navigation-color: #7d7f84;
+    
 
     /*GREEN BAR*/
     --green-bar: #adff2f;
@@ -75,6 +75,61 @@ ul {
 
 
     color: var(--inactive-text);
+
+}
+
+.inactive:hover {
+
+    color: var(--active-text);
+
+}
+
+.position-absolute.bar-active {
+
+    width: 20%;
+    top: -3px;
+    left: -3px;
+
+    border: var(--active-bar);
+    border-radius: 2px;
+
+
+}
+
+ .invisible {
+
+    display: none;
+
+} 
+
+.position-absolute.bar-green {
+
+    width: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+
+    border: var(--green-bar-left);
+    border-radius: 2px;
+
+
+}
+
+.position-absolute.circle {
+
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--active-text);
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+
+}
+
+.bar-inactive:hover .invisible {
+
+
+    display: block;
 
 }
 
@@ -170,7 +225,7 @@ main nav.navigation {
     margin-top: calc(var(--header-height) + var(--base-padding));
     margin-left: auto;
     margin-right: auto;
-    color: var(--navigation-color);
+    
     font-weight: 600;
     
 
@@ -237,6 +292,16 @@ section.popular .card img {
 
 }
 
+main i.position-absolute {
+
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(10);
+    color: var(--active-text);
+
+}
+
 /* HEADER */
 header {
 
@@ -259,6 +324,12 @@ header a {
     padding: var(--base-padding);
     margin-right: calc(var(--base-padding) * 3);
     border-radius: 50px;
+
+}
+
+header a:hover {
+
+    transform:scale(1.2);
 
 }
 
@@ -311,17 +382,7 @@ footer .bar-inactive {
 
 }
 
-.position-absolute.bar-active {
 
-    width: 20%;
-    top: -3px;
-    left: -3px;
-
-    border: var(--active-bar);
-    border-radius: 2px;
-
-
-}
 
 
 
