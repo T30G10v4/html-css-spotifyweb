@@ -133,6 +133,8 @@ ul {
 
 }
 
+
+
 /*------------------------------------------------------DESKTOP FIRST-------------------------*/
 
 /* VIEWPORT */
@@ -297,10 +299,18 @@ main i.position-absolute {
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%) scale(10);
+    transform: translate(-50%, -50%);
     color: var(--active-text);
+    font-size: 4rem;
 
 }
+
+.card-image.position-relative:hover .invisible {
+
+    display: block;
+
+}
+
 
 /* HEADER */
 header {
